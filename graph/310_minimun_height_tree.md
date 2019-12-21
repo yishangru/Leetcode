@@ -11,7 +11,7 @@ For this case, since the root node isn't the node in the longest path, **the end
 
 Solution: **BFS to find the longest path and select middle node as the root node**
 
-Proof for BFS for longest path:
+## Proof for BFS for longest path
 
 In order to find longest path in graph, we first prove the availability for BFS to find the longest path. According to above proof, it is easy to see we can randomly select a node as root node for tree to perform BFS. The leaf node with maximum distance from the root node must be a end node in the longest path.
 
