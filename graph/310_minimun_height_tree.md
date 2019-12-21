@@ -28,6 +28,42 @@ From above, we can use BFS and DFS to find the longest path in the graph. For th
 
 Solution Sample (Python):
 ```
-
-
+import collections
+class Solution:
+    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        if n == 1:
+            return [0]
+        
+        # dfs is better choice, comparing with bfs
+        self.graphRecorder = collections.defaultdict(lambda:set())
+        # generate graph for transverse
+        for edge in edges:
+            self.graphRecorder[edge[0]].add(edge[1])
+            self.graphRecorder[edge[1]].add(edge[0])
+            
+        # first dfs for find one end in longest path
+        self.visitedNode = set()
+        self.longestPath = None
+        self.dfs(edges[0][0], list())
+        
+        longest_path_end = self.longestPath[-1]
+        
+        # second dfs for find the path to the other end in longest path
+        self.visitedNode = set()
+        self.longestPath = None
+        self.dfs(longest_path_end, list())
+        
+        return [self.longestPath[len(self.longestPath)//2]] if len(self.longestPath)%2 == 1 else [self.longestPath[len(self.longestPath)//2 - 1], self.longestPath[len(self.longestPath)//2]]
+    
+    def dfs(self, root, pathHolder):
+        self.visitedNode.add(root)
+        pathHolder.append(root)
+        whetherLeaf = True
+        for neighbor in self.graphRecorder[root]:
+            if neighbor not in self.visitedNode:
+                whetherLeaf = False
+                self.dfs(neighbor, pathHolder)
+        if whetherLeaf and (self.longestPath is None or len(pathHolder) > len(self.longestPath)):
+            self.longestPath = list(pathHolder)
+        pathHolder.pop(-1)
 ```
