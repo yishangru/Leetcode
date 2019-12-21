@@ -1,6 +1,6 @@
 # Minimum Height Trees
 
-Solution: **BFS to find the longest path and select middle node as the root node**
+Solution: **BFS + DFS to find the longest path and select middle node as the root node**
 
 Solution Insights: **the root node in MHT must be the middle node of the longest path in graph**
 
@@ -11,9 +11,9 @@ For this case, the height for the left subtree and right subtree must be the sam
 - Case 2: Root node isn't the node in longest path
 For this case, since the root node isn't the node in the longest path, **the end nodes of longest path must in left subtree or right subtree, otherwise the root node must a node in the longest path**. Assume the longest path is in left subtree. Due to the tree structure, each node only has one parent, **leading the height of this longest path subtree is the same as the tree constructed using nodes in the longest path as root node**. However, there are some distance between the root node of this subtree and the root node of the whole tree, the height of the whole tree must be greater than the subtree, leading the solution not as minimum height.
 
-## Proof for BFS for longest path
+## Proof for BFS + DFS for longest path
 
-In order to find longest path in graph, we first prove the availability for BFS to find the longest path. According to above proof, it is easy to see we can randomly select a node as root node for tree to perform BFS. The leaf node with maximum distance from the root node must be a end node in the longest path.
+In order to find longest path in graph, we first prove the availability for BFS and DFS to find the longest path. According to above proof, it is easy to see we can randomly select a node as root node for tree to perform BFS. The leaf node with maximum distance from the root node must be a end node in the longest path.
 
 - Case 1: Root node is the node in longest path
 Trivial to prove.
@@ -23,7 +23,7 @@ Same as above, the longest path must in left subtree or right subtree. Assume th
 
 
 ## Solution Implementation
-From above, we can use 2 BFS to find the longest path in the graph. For the first BFS, find one of the end nodes in the longest path. The second BFS starts from that found end node and find the other end node (longest distance from that starting end node). After finding the longest path in graph, select middle node of the longest node as solution (for odd, select middle; for even, select both).
+From above, we can use BFS and DFS to find the longest path in the graph. For the first BFS, find one of the end nodes in the longest path. The second DFS starts from that found end node and find the other end node (longest distance from that starting end node). After finding the longest path in graph, select middle node of the longest node as solution (for odd, select middle; for even, select both).
 
 
 Solution Sample (Python):
