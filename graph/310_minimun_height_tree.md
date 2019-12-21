@@ -9,10 +9,10 @@ For this case, the height for the left subtree and right subtree must be the sam
 - Case 2: Root node isn't the node in longest path
 For this case, since the root node isn't the node in the longest path, **the end nodes of longest path must in left subtree or right subtree, otherwise the root node must a node in the longest path**. Assume the longest path is in left subtree. Due to the tree structure, each node only has one parent, **leading the height of this longest path subtree is the same as the tree constructed using nodes in the longest path as root node**. However, there are some distance between the root node of this subtree and the root node of the whole tree, the height of the whole tree must be greater than the subtree, leading the solution not as minimum height.
 
-Solution:
-BFS to find the longest path and select middle node as the root node.
+Solution: **BFS to find the longest path and select middle node as the root node**
 
 Proof for BFS for longest path:
+
 In order to find longest path in graph, we first prove the availability for BFS to find the longest path. According to above proof, it is easy to see we can randomly select a node as root node for tree to perform BFS. The leaf node with maximum distance from the root node must be a end node in the longest path.
 
 - Case 1: Root node is the node in longest path
