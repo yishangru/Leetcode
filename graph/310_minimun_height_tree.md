@@ -23,7 +23,7 @@ Same as above, the longest path must in left subtree or right subtree. Assume th
 
 
 ## Solution Implementation
-From above, we can use BFS and DFS to find the longest path in the graph. For the first BFS, find one of the end nodes in the longest path. The second DFS starts from that found end node and find the other end node (longest distance from that starting end node). After finding the longest path in graph, select middle node of the longest node as solution (for odd, select middle; for even, select both).
+From above, we can use BFS and DFS to find the longest path in the graph. For the first BFS, find one of the end nodes in the longest path. The second DFS starts from that found end node and find the path to the other end node (longest distance from that starting end node). After finding the longest path in graph, select middle node of the longest node as solution (for odd, select middle; for even, select both).
 
 
 Solution Sample (Python):
