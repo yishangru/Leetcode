@@ -2,7 +2,8 @@
 
 Solution: **BFS + DFS to find the longest path and select middle node as the root node**
 
-Solution Insights: **the root node in MHT must be the middle node of the longest path in graph**
+# Solution Insights
+**the root node in MHT must be the middle node of the longest path in graph**
 
 Proof:
 - Case 1: Root node is the node in longest path

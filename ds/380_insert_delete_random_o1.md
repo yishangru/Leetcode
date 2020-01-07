@@ -4,8 +4,8 @@ Illustration: **Design a data structure with O(1) insert, delete (check present)
 
 Solution: **Combined dict and list with delete replacement**
 
-Solution Insights: 
 
+# Solution Insights 
 Although delete and insert can be directly implemented by set, **there is no ordering for set**. We can’t implement the random-access using set. Thus, a stronger version implementation is required. As for basic data structure in Python, **only list has ordering relation (random access)**, we then consider list-based extension. List already satisfy the requirement of O(1) insert. List is O(n) for average case delete, thus some improvement is required. As for inspiration, List is only O(1) for deleting the end element. **We need a data structure to record the index of corresponding element and then swap it with the end element**. Then, we can update the position recorder and delete the end element with O(1). **This mapping relation naturally leads to dict structure**. We need an extra dict to record the element-index relation and update them when delete happens.
 
 ## Solution Implementation
