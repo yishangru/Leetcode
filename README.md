@@ -10,3 +10,6 @@
 ## String
 
 ## Dynamic Programming
+
+## General Problems
+1. 264-ugly_number_ii (number generation) - **medium**
