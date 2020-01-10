@@ -10,6 +10,8 @@
 ## String
 
 ## Dynamic Programming
+1. 1143-longest_common_subsequence (LCS) - **medium**
+2. 152-maximum_product_subarray - **medium**
 
 ## General Problems
 1. 264-ugly_number_ii (number generation) - **medium**
