@@ -1,5 +1,5 @@
 # Stone Game II
-Illustration: **Find optimal solution for Game (Max-min problem)**
+Illustration: **Find optimal solution for Game (Max-min game theory problem)**
 
 Solution: DP with state recorder, i.e. the max profit under certain conditions
 
