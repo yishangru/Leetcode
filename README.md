@@ -2,6 +2,7 @@
 
 ## Graph
 1. 310-minimun_height_tree (dfs) - **medium**
+1. 278-find_duplicate_number (dfs loop detection and loop entry point) - **medium**
 
 ## Data Structure
 1. 295-find_median_from_data_stream (max - min heap) - **hard**
