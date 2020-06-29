@@ -28,7 +28,7 @@ From above, we can use BFS and DFS to find the longest path in the graph. For th
 
 
 Solution Sample (Python - two dfs):
-```
+```python
 import collections
 class Solution:
     def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:

@@ -13,7 +13,7 @@ Solution: DP with recorder of **max positive product** and **min negative produc
 Starting from the end element, we transverse the array. We update the max positive product containing that element and min negative product containing that element. The max positive product containing that element would come from three sources: itself (positive); multiplication of itself (negative) with previous min negative product; multiplication of itself (positive) with previous max positive product. The min negative product containing that element would come from three sources: itself (negative); multiplication of itself (negative) with previous max positive product; multiplication of itself (positive) with previous min negative product. For each time, we record the max product.
 
 Solution Sample (Python - DP):
-```
+```python
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         maxResult = nums[-1]

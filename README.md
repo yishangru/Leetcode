@@ -16,3 +16,4 @@
 ## General Problems
 1. 264-ugly_number_ii (number generation) - **medium**
 2. 880-decoded_string_at_index (implicit string generation) - **medium**
+3. 767-reorganize_string (greedy generation) - **medium**

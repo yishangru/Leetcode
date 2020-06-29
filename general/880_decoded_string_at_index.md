@@ -15,7 +15,7 @@ If merely record current string and repeat for times, memory is not enough. Thus
 Implicit string generation and reduction with K update.
 
 Solution Sample (Python):
-```
+```python
 class Solution:
     def decodeAtIndex(self, S: str, K: int) -> str:
         stringLength = 0

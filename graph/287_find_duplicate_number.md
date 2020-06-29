@@ -22,7 +22,7 @@ We first perform node mapping. Each index is mapped to corresponding node and th
 
 
 Solution Sample:
-```
+```python
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         # we need a start point whose has no inbound reference, since all node value > 0, value at index is the reference to next node

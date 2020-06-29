@@ -15,7 +15,7 @@ Dict + List
 3.  Insert – using list append the new element and updating index relation in dict
 
 Solution Sample (Python - dict with list):
-```
+```python
 import random
 class RandomizedSet:
 

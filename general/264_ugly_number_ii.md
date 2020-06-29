@@ -12,7 +12,7 @@ There is ordering relation between ugly numbers. For each time, we want to maint
 Three pointers with generation update
 
 Solution Sample (Python - dict with list):
-```
+```python
 class Solution:
     def nthUglyNumber(self, n: int) -> int:
         # generate method for ugly number

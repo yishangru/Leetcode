@@ -10,7 +10,7 @@ Solution: DP with state recorder, i.e. the max profit under certain conditions
 Record the state for each step - a state refers as (m, current Position) and the corresponding max profits with given **(m, current position)** 
 
 Solution Sample (Python - DP):
-```
+```python
 class Solution:
     def stoneGameII(self, piles: List[int]) -> int:
         # minmax problem, search problem
