@@ -16,11 +16,13 @@ As for next char, if it is already in two char, it must be the same as the last 
 We can start the replace route as following to make the generation route fits our intuition algorithm.
 
 - Case 1: The next char is the same as the current maximum char-count.
+
 Case 1.1: The current char-count is now the same as maximum. Our intuition algorithm still holds.
 
 Case 1.2: The current char-count is smaller than maximum. We should now take the next into consideration. If the current char-count is the second maximum, our intuition algorithm still holds. If not, we first find the last position that the second maximum just exceeds current char-count. We swap the current char-count with that position (all generation property still holds)
 
 - Case 2: The next char is not the same as the current maximum char-count.
+
 Case 2.1: The current char-count is now the same as maximum. Our intuition algorithm still holds.
 
 Case 2.2: The current char-count is smaller than maximum. It is trivival for a new char, since we can easily find a valid position to place that char without affecting the original max char-count sequence. If the char is not new, we find the last position of current maximum char-count just exceed the current char-count. We can insert the current char-count ahead of the position to generate a valid sequence (Case 2.1).
