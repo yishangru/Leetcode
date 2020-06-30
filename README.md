@@ -13,7 +13,10 @@
 2. 152-maximum_product_subarray - **medium**
 3. 1140-stone_game_II (game theory) - **medium**
 
+## Greedy
+1. 55-jump_game (greedy max reachable) - **medium**
+2. 767-reorganize_string (greedy generation) - **medium**
+
 ## General Problems
 1. 264-ugly_number_ii (number generation) - **medium**
 2. 880-decoded_string_at_index (implicit string generation) - **medium**
-3. 767-reorganize_string (greedy generation) - **medium**
