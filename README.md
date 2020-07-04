@@ -20,3 +20,4 @@
 ## General Problems
 1. 264-ugly_number_ii (number generation) - **medium**
 2. 880-decoded_string_at_index (implicit string generation) - **medium**
+3. 456-132_pattern (max min stack) - **medium**
