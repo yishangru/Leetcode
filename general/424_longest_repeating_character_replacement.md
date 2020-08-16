@@ -6,7 +6,7 @@ Given a string s that consists of only uppercase English letters, you can perfor
 Solution: **Possible value with binary search**
 
 ## Solution Insights
-**After we perfrom the possible operations, we can get an interval with same character. Then, the problem become to find the longest interval that we can change all characters within that interval to be the same character. Another insight is that we need to get the current max-frequeny character in that interval to see whether we can change the other to that character. There is an optimization for this problem to prevent the search for update of max-frequency. Once we find a possible solution (maxf + k == interval), we can only find better solutions when we have a new interval (either the previous maxf or a new character showing up for a lot times), which is a possible increasing stack.**
+**After we perfrom the possible operations, we can get an interval with same character. Then, the problem become to find the longest interval that we can change all characters within that interval to be the same character. Another insight is that we need to get the current max-frequeny character in that interval to see whether we can change the other to that character. There is an optimization for this problem to prevent the search for update of max-frequency. Once we find a possible solution (maxf + k == interval), we can only find better solutions when we have a new interval (a character showing up for a lot times), which is a possible increasing stack.**
 
 ## Solution Implementation
 Two pointer solution
