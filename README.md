@@ -1,7 +1,7 @@
 # Leetcode Problem Listing
 
 ## Graph
-1. 310-minimun_height_tree (dfs) - **medium**
+1. 310-minimun_height_tree (dfs) - **medium** - &hearts; &hearts;
 1. 278-find_duplicate_number (dfs loop detection and loop entry point) - **medium**
 
 ## Data Structure
@@ -20,6 +20,6 @@
 ## General Problems
 1. 264-ugly_number_ii (number generation) - **medium**
 2. 880-decoded_string_at_index (implicit string generation) - **medium**
-3. 456-132_pattern (max min stack) - **medium**
-4. 410-split_array_largest_sum (binary search) - **hard**
-5. 424-longest_repeating_character_replacement (two pointer search) - **medium** 
+3. 456-132_pattern (max min stack) - **medium** - &hearts; &hearts;
+4. 410-split_array_largest_sum (binary search) - **hard** - &hearts; &hearts;
+5. 424-longest_repeating_character_replacement (two pointer search + stack like) - **medium** - &hearts; &hearts; &hearts;
